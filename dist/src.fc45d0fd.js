@@ -32318,7 +32318,9 @@ var Stocks = function Stocks() {
 
   return react_1.default.createElement("div", {
     className: "loading"
-  }, "We're fetching the latest data, hold tight");
+  }, "We're fetching the latest data, hold tight", react_1.default.createElement("div", {
+    className: "loader"
+  }));
 };
 
 exports.Stocks = Stocks;

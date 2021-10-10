@@ -6,3 +6,5 @@ node_modules
 # IDE local files
 .vs
 .vscode
+
+dist
