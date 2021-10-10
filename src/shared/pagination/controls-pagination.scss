@@ -1,0 +1,28 @@
+@import '../../shared/variables.scss';
+
+.pagination-controls {
+  margin: 1rem 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+  button {
+    font-size: 2em;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $activeBackground;
+    }
+  }
+}
+
+.next-button {
+  margin-left: auto;
+}
+
+.pagination-count {
+  margin-left: auto;
+}

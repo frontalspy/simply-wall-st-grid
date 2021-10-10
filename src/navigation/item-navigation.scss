@@ -1,0 +1,24 @@
+a {
+  position: relative;
+  color: #fff;
+  padding: 0.5rem;
+  text-decoration: none;
+  display: inline-flex;
+  &:after {
+    content: '';
+    transition: transform 0.2s ease-in-out;
+    position: absolute;
+    background-color: cyan;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+  }
+  &:not(.active):hover:after {
+    transform: scaleX(10%);
+  }
+  &.active:after {
+    transform: scaleX(100%);
+  }
+}

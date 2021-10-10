@@ -1,0 +1,58 @@
+import { Stock } from './stocks-types';
+
+export const MockStocks: Stock[] = [
+  {
+    canonical_url: '/apple',
+    company_id: '123',
+    exchange_symbol: 'APLE',
+    id: 0,
+    info: {} as any, // Not in scope
+    is_searchable: true,
+    isin_symbol: 'abc',
+    last_updated: 0,
+    name: 'Apple',
+    primary_canonical_url: null,
+    primary_ticker: true,
+    score: {} as any,
+    slug: 'apple',
+    ticker_symbol: 'APLE',
+    trading_item_id: 0,
+    unique_symbol: 'A',
+  },
+  {
+    canonical_url: '/microsoft',
+    company_id: '223',
+    exchange_symbol: 'MS',
+    id: 2,
+    info: {} as any, // Not in scope
+    is_searchable: false,
+    isin_symbol: 'ms',
+    last_updated: 121212,
+    name: 'Microsoft',
+    primary_canonical_url: '/ms',
+    primary_ticker: true,
+    score: {} as any,
+    slug: 'microsoft',
+    ticker_symbol: 'MS',
+    trading_item_id: 1111,
+    unique_symbol: 'M',
+  },
+  {
+    canonical_url: '/simply-wall-st',
+    company_id: '777',
+    exchange_symbol: 'SWS',
+    id: 777,
+    info: {} as any, // Not in scope
+    is_searchable: true,
+    isin_symbol: 'SWS',
+    last_updated: 9909,
+    name: 'Simply Wall St',
+    primary_canonical_url: '/simply-wall-st',
+    primary_ticker: true,
+    score: {} as any,
+    slug: 'simply-wall-st',
+    ticker_symbol: 'SWS',
+    trading_item_id: 777,
+    unique_symbol: 'S',
+  },
+];

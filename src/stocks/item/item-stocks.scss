@@ -1,0 +1,56 @@
+@import '../../shared/variables.scss';
+@import '../../shared/mixins.scss';
+tbody > tr {
+  cursor: pointer;
+  background-color: $background;
+  border-bottom: 1px solid $borderColor;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $activeBackground;
+  }
+}
+
+td,
+th {
+  padding: 1rem;
+}
+
+tr {
+  display: flex;
+  flex-flow: wrap row;
+  width: 100%;
+  @include breakpoint('medium') {
+    padding: 0;
+    display: table-row;
+  }
+}
+
+td {
+  max-width: 50%;
+  flex: 1 1 50%;
+  width: 100%;
+  box-sizing: border-box;
+
+  &:first-of-type {
+    padding: 1rem 0;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  &:nth-last-of-type(odd) {
+    padding-right: 0;
+  }
+  &:nth-last-of-type(even) {
+    padding-left: 0;
+  }
+}
+
+.hide-medium {
+  font-size: 0.75rem;
+  color: $borderColor;
+  width: 100%;
+  @include breakpoint('medium') {
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+$background: #151b24;
+$borderColor: #aaa;
+
+$activeBackground: lighten($background, 10);
+
+$breakpoints: (
+  'small': 367px,
+  // Mimimum supported device width
+  'medium': 767px,
+  // Anything above is considered non mobile
+);
