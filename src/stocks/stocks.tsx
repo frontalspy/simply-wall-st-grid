@@ -57,6 +57,7 @@ export const Stocks = () => {
   return (
     <div className="loading">
       We&apos;re fetching the latest data, hold tight
+      <div className="loader"></div>
     </div>
   );
 };
